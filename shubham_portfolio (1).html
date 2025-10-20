@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham More - Performance Marketing Expert | 60x ROAS Specialist</title>
+    <meta name="description" content="Performance Marketing Specialist with proven 60x ROAS. Generated 5000+ leads, managed ₹13.88L monthly budget across Real Estate, Fintech & E-commerce.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --accent: #10b981;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 100px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h60v60H0z" fill="none"/><path d="M30 0v60M0 30h60" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            opacity: 0.95;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* Metrics Section */
+        .metrics {
+            background: var(--light);
+            padding: 60px 20px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .metric-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .metric-label {
+            font-size: 1rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            font-size: 1.1rem;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Case Studies */
+        .case-studies {
+            background: white;
+        }
+
+        .case-study {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .case-study h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .case-study .industry {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .case-results {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .result-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .result-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent);
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .result-desc {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        /* Services */
+        .services {
+            background: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        .service-card p {
+            color: var(--gray);
+            line-height: 1.8;
+        }
+
+        /* Portfolio Projects */
+        .portfolio-projects {
+            background: white;
+        }
+
+        .project-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 30px;
+            background: var(--light);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            color: var(--dark);
+        }
+
+        .tab-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        .tab-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .project-card {
+            background: var(--light);
+            border-radius: 12px;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .project-header {
+            margin-bottom: 25px;
+        }
+
+        .project-header h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .project-tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .project-body {
+            color: var(--dark);
+        }
+
+        .project-body > p {
+            font-size: 1.05rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .project-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .detail-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .detail-item strong {
+            color: var(--primary);
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .detail-item p {
+            color: var(--gray);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .project-highlights {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .project-highlights h4 {
+            color: var(--dark);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .project-highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project-highlights li {
+            padding: 10px 0 10px 30px;
+            position: relative;
+            line-height: 1.7;
+            color: var(--dark);
+        }
+
+        .project-highlights li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .deliverables {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+        }
+
+        .deliverables strong {
+            display: block;
+            margin-bottom: 15px;
+            color: var(--dark);
+            font-size: 1.05rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 5px 5px 5px 0;
+            font-weight: 500;
+        }
+
+        /* Tech Stack */
+        .tech-stack {
+            background: var(--light);
+        }
+
+        .tech-categories {
+            display: grid;
+            gap: 40px;
+        }
+
+        .tech-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+        }
+
+        .tech-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .tech-item {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--dark);
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Certifications */
+        .certifications {
+            background: white;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .cert-item {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cert-icon {
+            font-size: 2rem;
+        }
+
+        .cert-name {
+            font-weight: 600;
+            color: var(--dark);
+            font-size: 0.95rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            border-bottom-color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+            .metric-number {
+                font-size: 2.5rem;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Shubham More</h1>
+            <p class="subtitle">Performance Marketing Expert | Meta Ads Specialist</p>
+            <p class="tagline">Generated 60x ROAS • 5,000+ Leads • ₹13.88L Monthly Budget Managed</p>
+            <div class="cta-buttons">
+                <a href="mailto:shubhammorey86@gmail.com" class="btn btn-primary">📧 Hire Me</a>
+                <a href="#case-studies" class="btn btn-secondary">📊 View Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <span class="metric-number">60x</span>
+                <span class="metric-label">Highest ROAS Achieved</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">5,000+</span>
+                <span class="metric-label">Leads Generated</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">₹13.88L</span>
+                <span class="metric-label">Monthly Ad Spend</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-number">91%</span>
+                <span class="metric-label">CPL Reduction</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section case-studies" id="case-studies">
+        <div class="container">
+            <h2 class="section-title">Proven Campaign Results</h2>
+            <p class="section-subtitle">Real campaigns, real data, real impact. Here's how I've delivered measurable growth for clients across industries.</p>
+
+            <!-- Case Study 1 -->
+            <div class="case-study">
+                <span class="industry">🏦 Fintech</span>
+                <h3>Legendary ₹35K Campaign: 60x ROAS Achievement</h3>
+                <p><strong>Challenge:</strong> Launch digital presence for fintech brand with zero brand awareness across 4 product verticals.</p>
+                
+                <div class="case-results">
+                    <div class="result-item">
+                        <span class="result-value">60.34x</span>
+                        <span class="result-desc">Return on Ad Spend</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">₹21L</span>
+                        <span class="result-desc">Revenue Generated</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">₹35K</span>
+                        <span class="result-desc">Total Ad Spend</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">8</span>
+                        <span class="result-desc">B2B Client Acquisitions</span>
+                    </div>
+                </div>
+                
+                <p><strong>Key Results:</strong> Generated ₹2.4L onboarding revenue + ₹18.7L monthly recurring revenue from single campaign.</p>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="case-study">
+                <span class="industry">💳 Fintech - Payplex</span>
+                <h3>4-Month Meta Ads Campaign: 11.38x ROAS</h3>
+                <p><strong>Challenge:</strong> Scale lead generation for payment solutions platform while maintaining cost efficiency.</p>
+                
+                <div class="case-results">
+                    <div class="result-item">
+                        <span class="result-value">4,196</span>
+                        <span class="result-desc">Total Leads Generated</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">₹2.29L</span>
+                        <span class="result-desc">Revenue Generated</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">₹78</span>
+                        <span class="result-desc">Average CPL</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">11.38x</span>
+                        <span class="result-desc">Overall ROAS</span>
+                    </div>
+                </div>
+                
+                <p><strong>Best Performance:</strong> March 2025 delivered 29.15x ROAS with ₹30.46 CPL.</p>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="case-study">
+                <span class="industry">🏘️ Real Estate</span>
+                <h3>100+ Projects: Consistent 2,000+ Leads Monthly</h3>
+                
+                <div class="case-results">
+                    <div class="result-item">
+                        <span class="result-value">2,000+</span>
+                        <span class="result-desc">Monthly Lead Pipeline</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">15%</span>
+                        <span class="result-desc">Lead Close Rate</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">66%</span>
+                        <span class="result-desc">CPL Reduction</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-value">250%</span>
+                        <span class="result-desc">Organic Traffic Growth</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services">
+        <div class="container">
+            <h2 class="section-title">What I Offer</h2>
+            <p class="section-subtitle">End-to-end performance marketing solutions designed to drive measurable business growth</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Meta Ads Management</h3>
+                    <p>Complete Facebook & Instagram campaign management. Specializing in lead generation with proven ROAS optimization.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Google Ads</h3>
+                    <p>Search, Display, and Performance Max campaigns designed for maximum ROI.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Analytics & Tracking</h3>
+                    <p>Comprehensive GA4 and GTM setup, conversion tracking, and Looker Studio dashboards.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>SEO Optimization</h3>
+                    <p>Technical SEO audits, on-page optimization, and link building strategies.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Landing Page Design</h3>
+                    <p>High-converting landing pages with A/B testing. Average 180% conversion improvement.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Marketing Automation</h3>
+                    <p>Workflow automation using Zapier, Make.com, and HubSpot integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Projects -->
+    <section class="section portfolio-projects">
+        <div class="container">
+            <h2 class="section-title">Portfolio Projects</h2>
+            <p class="section-subtitle">Comprehensive digital marketing projects showcasing strategic planning, execution, and optimization</p>
+            
+            <div class="project-tabs">
+                <button class="tab-btn active" onclick="switchTab('tab1')">Meta Ads Campaigns</button>
+                <button class="tab-btn" onclick="switchTab('tab2')">Google Ads Planning</button>
+                <button class="tab-btn" onclick="switchTab('tab3')">SEO Projects</button>
+                <button class="tab-btn" onclick="switchTab('tab4')">Market Research</button>
+            </div>
+
+            <!-- Tab 1: Meta Ads -->
+            <div id="tab1" class="tab-panel active">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🎯 BeatXP Meta Ads Campaign Strategy</h3>
+                        <span class="project-tag">Smartwatch & Audio Products</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Objective:</strong> Develop comprehensive Meta Ads strategy for BeatXP's Unbound Smartwatch and Echo XPods launch.</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Strategic Elements:</h4>
+                            <ul>
+                                <li>₹30 Lakhs campaign budget with 3-phase allocation</li>
+                                <li>Complete customer persona ("Techie Tina" - Age 27, tech professional)</li>
+                                <li>Competitive analysis: Xiaomi and Hammer positioning</li>
+                                <li>Multi-format strategy: Image, Video, Carousel, Collection ads</li>
+                                <li>Cross-platform placement optimization</li>
+                            </ul>
+                        </div>
+
+                        <div class="deliverables">
+                            <strong>Deliverables:</strong>
+                            <span class="badge">Campaign Strategy</span>
+                            <span class="badge">Budget Plan</span>
+                            <span class="badge">Ad Mockups</span>
+                            <span class="badge">Optimization Framework</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Google Ads -->
+            <div id="tab2" class="tab-panel">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🔍 BeatXP Google Ads Media Planning</h3>
+                        <span class="project-tag">Search & Display Campaigns</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Objective:</strong> Create comprehensive Google Ads strategy for BeatXP Flare Pro Smartwatch.</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Key Deliverables:</h4>
+                            <ul>
+                                <li>Comprehensive keyword research and grouping</li>
+                                <li>Ad copy variations with A/B testing framework</li>
+                                <li>Landing page optimization recommendations</li>
+                                <li>Bid strategy and budget allocation</li>
+                                <li>GA4 conversion tracking setup plan</li>
+                                <li>Competitor analysis and positioning</li>
+                            </ul>
+                        </div>
+
+                        <div class="deliverables">
+                            <strong>Deliverables:</strong>
+                            <span class="badge">Media Plan</span>
+                            <span class="badge">Keyword Research</span>
+                            <span class="badge">Ad Copy Variants</span>
+                            <span class="badge">Campaign Structure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: SEO Projects -->
+            <div id="tab3" class="tab-panel">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🔍 Betterhalf.ai - Complete SEO Strategy</h3>
+                        <span class="project-tag">Matrimony Platform</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Scope:</strong> Comprehensive SEO audit and strategy development for AI-powered matrimony platform.</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Project Components:</h4>
+                            <ul>
+                                <li>SEO Diagnostic Report with technical audit</li>
+                                <li>Keyword Research Report with search volume analysis</li>
+                                <li>Keyword-Page Allocation strategy</li>
+                                <li>SEO Action Plan with timeline and priorities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🔍 RPM Infotech - Technical SEO Audit</h3>
+                        <span class="project-tag">IT Services Company</span>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-highlights">
+                            <h4>Audit Coverage:</h4>
+                            <ul>
+                                <li>On-Page SEO: H2 tags, meta descriptions, image optimization</li>
+                                <li>Technical SEO: 404 errors, site speed, Core Web Vitals</li>
+                                <li>Off-Page SEO: Backlink analysis using SEMrush & MOZ</li>
+                                <li>Competitor Analysis: eNoah Solutions and Emerging Alliance</li>
+                                <li>Link Building Strategy and opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🔍 Multi-Site SEO Audits</h3>
+                        <span class="project-tag">E-commerce & Services</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Scope:</strong> Comprehensive SEO audits for Shaadi.com, EaseMyTrip, and CarWale.</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Common Audit Elements:</h4>
+                            <ul>
+                                <li>On-page SEO issues identification</li>
+                                <li>Technical SEO health check</li>
+                                <li>Backlink profile analysis</li>
+                                <li>Website structure optimization</li>
+                                <li>Keyword identification and mapping</li>
+                            </ul>
+                        </div>
+
+                        <div class="deliverables">
+                            <strong>Deliverables:</strong>
+                            <span class="badge">3 Complete Audits</span>
+                            <span class="badge">URL Optimization</span>
+                            <span class="badge">Keyword Lists</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Market Research -->
+            <div id="tab4" class="tab-panel">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>📊 Lenskart - Competitive Analysis & Persona</h3>
+                        <span class="project-tag">Eyewear E-commerce</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Competitors Analyzed:</strong> Specksmakers, Vision Express, Titan Eye Plus, EyeMyEye</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Analysis Covered:</h4>
+                            <ul>
+                                <li>Product offering comparison across 5 competitors</li>
+                                <li>Business model analysis (B2C, D2C strategies)</li>
+                                <li>USP identification and positioning</li>
+                                <li>Pricing strategy: ₹599-₹7,499 vs ₹990-₹1,85,000</li>
+                                <li>Trust-building mechanisms analysis</li>
+                            </ul>
+                        </div>
+                        
+                        <p><strong>Customer Persona:</strong> Age 25, Private job, Pune-based. Pain points: heavy specs, nose irritation. Goals: lightweight, trendy, protective, budget-friendly.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>💻 Zoom - Video Conferencing Analysis</h3>
+                        <span class="project-tag">B2B SaaS</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Competitors Analyzed:</strong> Cisco Webex, Whereby, Zoho Meetings, GoTo</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Research Areas:</h4>
+                            <ul>
+                                <li>Product suite comparison across platforms</li>
+                                <li>Target customer segmentation</li>
+                                <li>USP analysis: reliability, user experience, features</li>
+                                <li>Pricing strategies: Free to ₹19,990/year</li>
+                                <li>Trust factor evaluation</li>
+                            </ul>
+                        </div>
+                        
+                        <p><strong>Persona:</strong> Age 35, Bengaluru consultant, MBA, needs clear video quality, max participants, price-conscious.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🍫 The Whole Truth Foods - Health Snacks Analysis</h3>
+                        <span class="project-tag">D2C Food & Wellness</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Competitors Analyzed:</strong> Yoga Bar, Lo! Foods, Lil Goodness, Open Secret</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Strategic Insights:</h4>
+                            <ul>
+                                <li>Product portfolio comparison</li>
+                                <li>D2C and B2C business model analysis</li>
+                                <li>USP differentiation: transparency, clean ingredients</li>
+                                <li>Pricing landscape: ₹199-₹3,999 analysis</li>
+                                <li>Brand trust building mechanisms</li>
+                            </ul>
+                        </div>
+                        
+                        <p><strong>Persona:</strong> Age 25, Pune-based single graduate, gym enthusiast, seeks tasty, protein-rich, budget-friendly healthy snacks.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>🌐 Website Structure Analysis</h3>
+                        <span class="project-tag">Information Architecture</span>
+                    </div>
+                    <div class="project-body">
+                        <p><strong>Analyzed:</strong> Flipkart, Shaadi.com, and other major platforms for structure optimization.</p>
+                        
+                        <div class="project-highlights">
+                            <h4>Key Findings:</h4>
+                            <ul>
+                                <li>Flipkart: Hierarchical (60%), Linear (25%), Database (15%)</li>
+                                <li>Shaadi.com: Matrix (30%), Linear (45%), Database (25%)</li>
+                                <li>URL optimization recommendations</li>
+                                <li>Keyword extraction for major brands</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="section tech-stack">
+        <div class="container">
+            <h2 class="section-title">Technology Stack</h2>
+            <p class="section-subtitle">Modern marketing tools and platforms I use to deliver exceptional results</p>
+            
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>🎯 Advertising Platforms</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Meta Ads Manager</span>
+                        <span class="tech-item">Meta Business Suite</span>
+                        <span class="tech-item">Google Ads</span>
+                        <span class="tech-item">Performance Max</span>
+                        <span class="tech-item">Display Ads</span>
+                        <span class="tech-item">Search Ads</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>📊 Analytics & Tracking</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Google Analytics 4 (GA4)</span>
+                        <span class="tech-item">Google Tag Manager (GTM)</span>
+                        <span class="tech-item">Looker Studio</span>
+                        <span class="tech-item">Meta Pixel</span>
+                        <span class="tech-item">Conversion API (CAPI)</span>
+                        <span class="tech-item">Hotjar</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>🔧 Marketing Technology</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">HubSpot CRM</span>
+                        <span class="tech-item">HubSpot Marketing Hub</span>
+                        <span class="tech-item">Zapier</span>
+                        <span class="tech-item">Make.com</span>
+                        <span class="tech-item">WordPress</span>
+                        <span class="tech-item">Mailchimp</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>🔍 SEO & Research Tools</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">SEMrush</span>
+                        <span class="tech-item">Ahrefs</span>
+                        <span class="tech-item">Screaming Frog</span>
+                        <span class="tech-item">Mangools</span>
+                        <span class="tech-item">GTMetrix</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>🎨 Design & Creative</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Canva Pro</span>
+                        <span class="tech-item">Figma</span>
+                        <span class="tech-item">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <h3>📋 Project Management</h3>
+                    <div class="tech-items">
+                        <span class="tech-item">Trello</span>
+                        <span class="tech-item">Notion</span>
+                        <span class="tech-item">Slack</span>
+                        <span class="tech-item">Google Workspace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Training</h2>
+            <p class="section-subtitle">Continuously learning and staying updated with latest digital marketing trends</p>
+            
+            <div class="cert-grid">
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Meta Certified Digital Marketing Associate</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Google Ads Display Certification</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Google Ads Search Certification</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Google Analytics Certification</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Campaign Manager 360 Certification</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">HubSpot SEO Certification</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">HubSpot Content Marketing</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Amazon Ads Foundation & Sponsored Ads</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Digital Trailblazer - Google</span>
+                </div>
+                <div class="cert-item">
+                    <span class="cert-icon">✅</span>
+                    <span class="cert-name">Advanced Digital Marketing - MyCaptain</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Scale Your Business?</h2>
+            <p>Let's discuss how I can help you achieve measurable growth through data-driven performance marketing.</p>
+            <div class="cta-buttons">
+                <a href="mailto:shubhammorey86@gmail.com" class="btn btn-primary">📧 Get in Touch</a>
+                <a href="tel:+919370587430" class="btn btn-secondary">📱 Call Now</a>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📧 <a href="mailto:shubhammorey86@gmail.com">shubhammorey86@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    📱 <a href="tel:+919370587430">+91-9370587430</a>
+                </div>
+                <div class="contact-item">
+                    📍 Pune, Maharashtra | Remote Available
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shubham More. All rights reserved. | Performance Marketing Expert | Available for Remote Opportunities</p>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            // Hide all tabs
+            var tabs = document.querySelectorAll('.tab-panel');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            
+            // Remove active class from all buttons
+            var buttons = document.querySelectorAll('.tab-btn');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('active');
+            }
+            
+            // Show selected tab
+            document.getElementById(tabId).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+                        
